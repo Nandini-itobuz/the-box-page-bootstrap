@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Work Sans", sans-serif !important;
 }
 
 /*nav*/
@@ -33,7 +35,7 @@
   width: 300px;
 }
 
-.btn-cutom {
+.btn-custom {
   height: 40px;
   width: 148px;
 }
@@ -58,7 +60,7 @@
   width: 70vw;
 }
 .reason-item:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 /*about-us*/
@@ -79,9 +81,10 @@
   font-weight: 700;
 }
 
-.aboutus-des {
-  font-size: 16px;
+.aboutus-details {
+  font-size: 15px;
   font-weight: 400;
+  padding: 2% 0%;
 }
 
 .aboutus-btn {
@@ -93,7 +96,8 @@
   background-color: #e0e3eb;
 }
 
-.item-even, .item-odd {
+.item-even,
+.item-odd {
   height: auto;
   width: 90%;
   padding: 30px;
@@ -126,7 +130,7 @@
   color: #2947a9;
 }
 
-.card-v7-des {
+.card-v7-details {
   font-size: 20px;
   font-weight: 400;
   color: #667299;
@@ -134,6 +138,7 @@
 
 .card-v7-button {
   background-color: #2947a9;
+  float: center;
 }
 
 .card-v7 {
@@ -181,7 +186,7 @@
 }
 
 .project-cards .card:hover {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 .project-cards .card-body {
   background-color: #2947a9;
@@ -206,8 +211,13 @@
   font-weight: 400;
 }
 
-.form-btn {
+.form-btn,
+.footer-btn {
   background-color: #2947a9;
+}
+.form-btn:hover,
+.footer-btn:hover {
+  background-color: #292e3d;
 }
 
 .form-inputs {
@@ -225,7 +235,7 @@
 }
 
 .bottom-heading {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #2947a9;
 }
@@ -240,7 +250,8 @@
   background-color: #f9995d;
 }
 
-.logo:hover, .bottom-icon:hover {
+.logo:hover,
+.bottom-icon:hover {
   cursor: pointer;
 }
 
@@ -249,7 +260,9 @@
 }
 
 @media (min-width: 576px) {
-  .item-even, .item-odd {
+  /*services*/
+  .item-even,
+  .item-odd {
     height: auto;
     width: 35%;
   }
@@ -289,17 +302,23 @@
   }
   .item-even:hover,
   .item-odd:hover {
-    transform: scale(1.08);
+    transform: scale(1.02);
   }
   .card-v7-group2 {
     width: 40%;
     padding: 9% 5% 0% 0%;
   }
+  .aboutus-details {
+    padding: 9% 0% !important;
+  }
   .project-list {
     width: 25%;
   }
   .project-cards {
-    width: 80% !important;
+    width: 90% !important;
+  }
+  .card-v7-button {
+    float: left !important;
   }
 }
 @media (min-width: 992px) {
@@ -319,7 +338,7 @@
     right: 10%;
   }
   .aboutus-btn {
-    margin-top: 20% !important;
+    margin-top: 15% !important;
   }
   .project-container {
     gap: 10% !important;
