@@ -51,8 +51,8 @@ $primary: #2947a9;
 }
 
 .hero-contentbox {
-  right: 5%;
-  bottom: 1%;
+  right: 3%;
+  bottom: 0%;
 }
 
 /*reputation*/
@@ -67,34 +67,35 @@ $primary: #2947a9;
 .reason-item {
   padding: 20px 20px 30px 20px;
   border: 1px solid #e0e3eb;
-  width: 70vw;
   &:hover {
-    transform: scale(1.02);
+    cursor: pointer;
   }
+  @include img-style(190px, 85vw);
 }
 
 /*about-us*/
 
 .aboutus-img {
-  @include img-style(auto, 80%);
+  @include img-style(auto, 85%);
 }
 
 .aboutus-text {
-  padding: 40px 50px 50px 60px;
+  padding: 20px 25px 25px 40px;
   background-color: $primary;
-  @include img-style(auto, 80%);
+  @include img-style(auto, 85%);
 }
 
 .aboutus-heading {
   @include text-style(36px, 700);
 }
 
-.aboutus-details {
-  @include text-style(15px, 400);
-  padding: 2% 0%;
-}
+// .aboutus-details {
+//   @include text-style(15px, 400);
+//   padding: 2% 0%;
+// }
 
 .aboutus-btn {
+  margin-top:5% !important;
   color: $primary !important;
 }
 
@@ -119,12 +120,16 @@ $primary: #2947a9;
 
 /*stats*/
 .card-num {
-  @include text-style(48px, 600);
+  @include text-style(40px, 600);
+}
+
+.card-v7{
+  padding: 10px;
 }
 
 .card-v7-text {
   color: #667299;
-  @include text-style(20px, 400);
+  @include text-style(16px, 400);
   border-left: #f9995d 5px solid;
 }
 
@@ -143,9 +148,6 @@ $primary: #2947a9;
   float: center;
 }
 
-.card-v7 {
-  padding: 40px;
-}
 
 .container-v7-item {
   box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
@@ -161,7 +163,7 @@ $primary: #2947a9;
 /*projects*/
 .projects {
   @include text-style(36px, 700);
-  margin-left: 112px;
+  margin-left: 60px;
 }
 
 .project-list {
@@ -169,8 +171,10 @@ $primary: #2947a9;
   @include text-style(15px, 500);
   padding: 0px 20px 20px 20px !important;
   &:hover {
+    cursor: pointer;
     color: $primary;
   }
+
 }
 
 .project-item {
@@ -178,6 +182,11 @@ $primary: #2947a9;
   a {
     text-decoration: none !important;
     color: #c2c7d6;
+    &:hover{
+      cursor: pointer;
+      border-bottom: 4px solid $primary;
+      color: $primary !important;
+    }
   }
 }
 
@@ -188,7 +197,8 @@ $primary: #2947a9;
 .project-cards {
   .card {
     &:hover {
-      transform: scale(0.98);
+      cursor: pointer;
+      // transform: scale(0.98);
     }
   }
   .card-body {
@@ -202,6 +212,7 @@ $primary: #2947a9;
 
 /*form*/
 .form {
+  padding: 15px;
   background-color: #f6f8f7;
 }
 
@@ -228,7 +239,7 @@ $primary: #2947a9;
 /*bottom*/
 .bottom {
   gap: 25% !important;
-  padding: 5% 5% 5% 12% !important;
+  padding: 5% 5% 3% 9% !important;
 }
 
 .bottom-email {
@@ -245,11 +256,15 @@ $primary: #2947a9;
 .footer-main {
   background-color: $primary;
   height: 10%;
+  .footer-text{
+    margin-left: 9%;
+  }
 }
 
 .footer-btn {
   background-color: $hover-color;
 }
+
 
 .logo:hover,
 .bottom-icon:hover {
@@ -261,6 +276,12 @@ $primary: #2947a9;
 }
 
 @media (min-width: 576px) {
+
+  .reason-item {
+    @include img-style(170px, 85vw);
+  }
+  
+
   /*services*/
   .item-even,
   .item-odd {
@@ -273,11 +294,28 @@ $primary: #2947a9;
   }
 
   .card-v7-topic {
-    @include text-style(60px, 700);
+    @include text-style(50px, 700);
   }
 
   .add-bg > .btn {
-    margin: 5% 15%;
+    margin: 5% 15% !important;
+  }
+
+  .one{
+    @include img-style(15px,15px );
+    
+    background-color: $primary !important;
+  }
+  .dot{
+    @include img-style(15px,15px );
+    background-color: #F6F8F7 !important;
+    &:hover{
+      background-color: $primary !important;
+    }
+  }
+
+  .control-panel{
+    width: 39rem  !important;
   }
 
   .form-inputs {
@@ -295,36 +333,45 @@ $primary: #2947a9;
   }
 
   .reason-item {
-    @include img-style(200px, 320px);
+    @include img-style(210px, 320px);
   }
 
   .item-even,
   .item-odd {
     @include img-style(auto, 25%);
     &:hover {
-      transform: scale(1.02);
+      cursor: pointer;
+      // transform: scale(1.02);
     }
   }
-
+  .card-num {
+    @include text-style(52px, 600);
+  }
   .card-v7-group2 {
     width: 40%;
-    padding: 9% 5% 0% 0%;
+    padding: 4% 7% 4% 0%;
   }
 
-  .aboutus-details {
-    padding: 9% 0% !important;
+  .card-v7-topic {
+    @include text-style(55px, 700);
   }
 
   .project-list {
     width: 25%;
+
   }
 
   .project-cards {
     width: 90% !important;
   }
 
+
   .card-v7-button {
     float: left !important;
+  }
+  
+  .card-v7{
+    padding: 40px;
   }
 }
 
@@ -339,14 +386,10 @@ $primary: #2947a9;
   }
 
   .aboutus-text {
-    @include img-style(70%, 35vw);
+    @include img-style(63%, 35vw);
     position: absolute;
     top: 15%;
     right: 10%;
-  }
-
-  .aboutus-btn {
-    margin-top: 15% !important;
   }
 
   .project-container {
@@ -355,6 +398,15 @@ $primary: #2947a9;
 
   .project-cards {
     width: 65% !important;
+  }
+
+  .project-item  a {
+    &:hover{
+      cursor: pointer;
+      border-left: 3px solid $primary;
+      border-bottom: 0px ;
+      color: $primary !important;
+    }
   }
 }
 
