@@ -156,7 +156,8 @@
 .projects {
   font-size: 36px;
   font-weight: 700;
-  margin-left: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
 
 .project-list {
@@ -217,6 +218,7 @@
 .form-btn,
 .footer-btn {
   background-color: #2947a9;
+  width: 29%;
 }
 .form-btn:hover,
 .footer-btn:hover {
@@ -229,7 +231,7 @@
 
 /*bottom*/
 .bottom {
-  gap: 25% !important;
+  gap: 15% !important;
   padding: 5% 5% 3% 9% !important;
 }
 
@@ -280,6 +282,7 @@
     padding: 60px;
     gap: 30px !important;
   }
+  /*projects*/
   .card-v7-topic {
     font-size: 50px;
     font-weight: 700;
@@ -295,7 +298,7 @@
   .dot {
     height: 15px;
     width: 15px;
-    background-color: #F6F8F7 !important;
+    background-color: #f6f8f7 !important;
   }
   .dot:hover {
     background-color: #2947a9 !important;
@@ -303,6 +306,7 @@
   .control-panel {
     width: 39rem !important;
   }
+  /*form*/
   .form-inputs {
     width: 50% !important;
   }
@@ -317,10 +321,12 @@
     top: 30%;
     left: 8%;
   }
+  /*reasons*/
   .reason-item {
     height: 210px;
     width: 320px;
   }
+  /*services*/
   .item-even,
   .item-odd {
     height: auto;
@@ -330,6 +336,7 @@
   .item-odd:hover {
     cursor: pointer;
   }
+  /*stats*/
   .card-num {
     font-size: 52px;
     font-weight: 600;
@@ -342,17 +349,19 @@
     font-size: 55px;
     font-weight: 700;
   }
-  .project-list {
-    width: 25%;
-  }
-  .project-cards {
-    width: 90% !important;
-  }
   .card-v7-button {
     float: left !important;
   }
   .card-v7 {
     padding: 40px;
+  }
+  /*projects*/
+  .project-item-blue {
+    color: #2947a9 !important;
+    border-left: 2px solid #2947a9;
+  }
+  .project-cards {
+    width: 90% !important;
   }
 }
 @media (min-width: 992px) {
